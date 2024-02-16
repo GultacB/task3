@@ -1,0 +1,10 @@
+﻿Console.WriteLine("otagin hundurluyunu daxil edin:");
+float hundurluk=float.Parse(Console.ReadLine());
+Console.WriteLine("otagin enini daxil edin:");
+float eni=float.Parse(Console.ReadLine());
+Console.WriteLine("otagin uzunlugunu daxil edin:");
+float uzunluq=float.Parse(Console.ReadLine());
+float YansethlerininSahesi = 4*((2 * (eni + uzunluq)) * hundurluk);
+float QapiPencereCixilmaqla = YansethlerininSahesi - (YansethlerininSahesi * 20) / 100;
+double BoyaMiqdari = QapiPencereCixilmaqla * 0.5;
+Console.WriteLine("bu qeder boya teleb olunur:" + BoyaMiqdari + "litr");
